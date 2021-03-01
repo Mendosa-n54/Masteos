@@ -1,0 +1,11 @@
+/* Home */
+.header-image {
+	width: 50%;
+	text-align: center;
+}
+.button-start {
+	width: 80%;
+	padding: 10px;
+	font-size: 3em;
+	cursor: pointer;
+}

@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+// Modules
+import React from 'react'
+import { BrowserRouter, Route, Switch } from "react-router-dom"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+// Files CSS
+import './stylesheets/App.css'
 
-export default App;
+// Pages
+import Home from './pages/Home'
+import Game from './pages/Game'
+import Error404 from './pages/Error404'
+
+const App = () => (
+	<BrowserRouter>
+		<Switch>
+			<Route exact path="/">
+				<Home />
+			</Route>
+			<Route path="/game">
+				<Game />
+			</Route>
+			<Route path="*">
+				<Error404 />
+			</Route>
+		</Switch>
+	</BrowserRouter>
+)
+
+export default App

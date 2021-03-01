@@ -1,0 +1,46 @@
+[
+    {
+        "level": 1,
+        "code": "function doubleInteger(i) {\r\n    \r\n    // i will be an integer. Double it and return it.\r\n    \r\n    \r\n    \r\n    return i;\r\n    \r\n}",
+        "tests": [
+            { "i": 2, "o": 4 },
+            { "i": 4, "o": 8 },
+            { "i": -10, "o": -20 },
+            { "i": 0, "o": 0 },
+            { "i": 100, "o": 200 }
+        ]
+    },
+    {
+        "level": 2,
+        "code": "function isNumberEven(i) {\r\n    \r\n    // i will be an integer. Return true if it's even, and false if it isn't.\r\n    \r\n    \r\n    \r\n    \r\n}",
+        "tests": [
+            { "i": 2, "o": true },
+            { "i": 3, "o": false },
+            { "i": 0, "o": true },
+            { "i": -2, "o": true },
+            { "i": "(Math.floor(Math.random()*1000000)*2)", "o": true }
+        ]
+    },
+    {
+        "level": 3,
+        "code": "function getFileExtension(i) {\r\n    \r\n    // i will be a string, but it may not have a file extension.\r\n    // return the file extension (with no period) if it has one, otherwise false\r\n    \r\n    \r\n    \r\n}",
+        "tests": [
+            { "i": "'blatherskite.png'", "o": "png" },
+            { "i": "'perfectlylegal.torrent'", "o": "torrent" },
+            { "i": "'spaces are fine in file names.txt'", "o": "txt" },
+            { "i": "'this does not have one'", "o": false },
+            { "i": "'.htaccess'", "o": "htaccess" }
+        ]
+    },
+    {
+        "level": 4,
+        "code": "function longestString(i) {\r\n    \r\n    // i will be an array.\r\n    // return the longest string in the array\r\n    \r\n    \r\n    \r\n}",
+        "tests": [
+            { "i": "['a','ab','abc']", "o": "abc" },
+            { "i": "['big',[0,1,2,3,4],'tiny']", "o": "tiny" },
+            { "i": "['Hi','World','你好']", "o": "World" },
+            { "i": "[true,false,'lol']", "o": "lol" },
+            { "i": "[{object: true,mainly: 'to confuse you'},'x']", "o": "x" }
+        ]
+    }
+]
